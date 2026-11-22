@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements Example</title>
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f3f6fa;
+            color: #172536;
+        }
+
+        /* HEADER: top area of the webpage */
+        header {
+            background: #17324d;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        /* NAV: contains navigation links */
+        nav {
+            background: #dce8f2;
+            padding: 14px;
+            text-align: center;
+        }
+        nav a {
+            color: #17324d;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* MAIN: contains the main content of the page */
+        main {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        /* SECTION: a separate section of the page */
+        section {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ASIDE: extra or side information */
+        aside {
+            flex: 1;
+            background: #fff3d6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* FIGURE: groups an image/diagram with its caption */
+        figure {
+            margin: 15px 0;
+            padding: 15px;
+            background: #eef3f8;
+            border-radius: 8px;
+            text-align: center;
+        }
+        figure img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+        }
+
+        /* FIGCAPTION: caption or explanation for the figure */
+        figcaption {
+            margin-top: 8px;
+            color: #42566b;
+            font-style: italic;
+        }
+
+        /* DETAILS: extra information that can be opened or closed */
+        details {
+            margin-top: 15px;
+            padding: 12px;
+            background: #e8f4ec;
+            border-radius: 8px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* FOOTER: bottom area of the webpage */
+        footer {
+            background: #17324d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER: The top part of the webpage, usually contains title/logo -->
+    <header>
+        <h1>My Student Website</h1>
+        <p>Learning HTML Semantic Elements</p>
+    </header>
+
+    <!-- NAV: Navigation links help users move between pages or sections -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#lessons">Lessons</a>
+    </nav>
+
+    <!-- MAIN: Holds the main, important content of this webpage -->
+    <main id="home">
+
+        <!-- SECTION: Groups related content together -->
+        <section id="lessons">
+            <h2>HTML Semantic Elements</h2>
+            <p>
+                Semantic elements describe the meaning and purpose of different
+                parts of a webpage. They make the HTML structure easier to
+                understand.
+            </p>
+
+            <!-- FIGURE: Groups a picture or diagram with its caption -->
+            <figure>
+                <img
+                    src="assets/fata-uni-image.jpg"
+                    alt="A simple diagram representing an HTML webpage"
+                >
+
+                <!-- FIGCAPTION: Gives a caption to the figure above -->
+                <figcaption>
+                    Figure 1: A simple illustration of a webpage layout.
+                </figcaption>
+            </figure>
+
+            <!-- DETAILS: Shows additional information when the user opens it -->
+            <details>
+                <summary>Read extra details</summary>
+                <p>
+                    Semantic HTML uses meaningful tags such as header, nav,
+                    main, section, aside and footer instead of using only
+                    generic containers.
+                </p>
+            </details>
+        </section>
+
+        <!-- ASIDE: Contains related side information, not the main content -->
+        <aside>
+            <h2>Quick Note</h2>
+            <p>
+                Semantic tags tell the browser and developers what each part
+                of the webpage represents.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER: The bottom part of the webpage, often contains copyright info -->
+    <footer>
+        <p>&copy; 2026 My Student Website | HTML Practice</p>
+    </footer>
+
+</body>
+</html>
